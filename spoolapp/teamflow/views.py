@@ -21,7 +21,7 @@ def landing(request):
 
     if request.method=='POST':
         email = request.POST['email']
-        message = 'new interest submission from'+email
+        message = 'new interest submission from '+email
         send_mail('Form submission',
                   message,
                   settings.EMAIL_HOST_USER,
