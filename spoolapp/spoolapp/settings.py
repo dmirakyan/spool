@@ -28,7 +28,10 @@ SECRET_KEY = '_=6!l&y9ye4$&n=72@3yln0l*g78n*_+&ec%&(z9r*skiw1v(n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.getspool.io',
+    'getspool.io'
+]
 
 
 # Application definition
