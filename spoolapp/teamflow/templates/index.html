@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+
+{% block body_block %}
+{% load static %}
+
+<!-- <div class="masthead">
+    <div class="masthead-bg"></div>
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 my-auto">
+          <div class="masthead-content text-white py-5 py-md-0">
+            <h1 class="mb-3">Coming Soon!</h1>
+            <p class="mb-5">We're working hard to finish the development of this site. Our target launch date is
+              <strong>January 2022</strong>! Sign up for updates using the form below!</p>
+            <div class="input-group input-group-newsletter">
+              <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="submit-button">
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button" id="submit-button">Notify Me!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="relative bg-white overflow-hidden h-screen" style="background: url({% static "images/herobglrg.png" %}); background-size: cover; ">
+
+    <div>
+      <main class="mt-8 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 display-block">
+          <img class="display-block pb-2 ml-auto mr-auto lg:max-h-44" src="{% static "images/logo-white-4.png" %}">
+          <div class="text-center ml-auto mr-auto">
+            <h1 class="pt-12 display-block text-4xl font-bold sm:text-4xl md:text-5xl">
+              <span class="xl:inline text-white">bring your team back to the basics.</span>
+            </h1>
+
+            <h1 class="pt-20 display-block text-4xl sm:text-4xl md:text-4xl">
+              <span class="xl:inline text-white">Learn more today</span>
+            </h1>
+
+            <div class="mt-6">
+              <form method="post" action="{% url 'landing' %}">
+                {% csrf_token %}
+                <input name="email" class="flex-1 appearance-none border border-transparent py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-full text-base focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent" placeholder="Your email">
+                <!-- <input class="rounded-lg border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Your email"> -->
+                <button type = "submit" class="flex-1 appearance-none border border-transparent py-2 mx-2 px-4 rounded-full bg-blue-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
+                  <p class="text-l">
+                    GO
+                  </p>
+                </button>
+
+
+
+              </form>
+            </div>
+          </div>
+
+            
+        </main>
+      </div>
+    </div>
+
+    <!-- <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="{% static "images/herobg.png" %}" alt="">
+    </div> -->
+
+  </div>
+{% endblock %}
