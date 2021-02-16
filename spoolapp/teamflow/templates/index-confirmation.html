@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block body_block %}
+{% load static %}
+
+  <div class="relative bg-white overflow-hidden h-screen" style="background: url({% static "images/herobglrg.png" %}); background-size: cover; ">
+
+    <div>
+      <main class="mt-8 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 display-block">
+          <img class="display-block pb-2 ml-auto mr-auto lg:max-h-44" src="{% static "images/logo-white-4.png" %}">
+          <div class="text-center ml-auto mr-auto">
+            <h1 class="pt-12 display-block text-4xl font-bold sm:text-4xl md:text-5xl">
+              <span class="xl:inline text-white">bring your team back to the basics.</span>
+            </h1>
+
+            <h1 class="pt-20 text-white display-block text-4xl sm:text-4xl md:text-4xl">thanks for signing up!</h1>
+            <h1 class="pt-2 text-white display-block text-4xl sm:text-4xl md:text-4xl">your team’s gonna love you.</h1>
+            </h1>
+          </div>
+
+            
+        </main>
+      </div>
+    </div>
+
+    <!-- <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="{% static "images/herobg.png" %}" alt="">
+    </div> -->
+
+  </div>
+{% endblock %}

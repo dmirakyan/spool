@@ -30,7 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'www.getspool.io',
-    'getspool.io'
+    'getspool.io',
+    '127.0.0.1',
 ]
 
 

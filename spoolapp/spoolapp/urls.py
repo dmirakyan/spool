@@ -33,4 +33,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),  
     path('', views.landing, name='landing'),
+    path('thanks',views.thanks, name='thanks')
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

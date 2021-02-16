@@ -27,9 +27,11 @@ def landing(request):
                   settings.EMAIL_HOST_USER,
                   ['hello@getspool.io'],
                   fail_silently=False)
-        return render(request,'index.html')
+        return render(request,'index-confirmation.html')
 
-
+def thanks(request):
+    if request.method == 'GET':
+        return render(request,'index-confirmation.html')
 
 class TeamView(viewsets.ModelViewSet):
   serializer_class = TeamSerializer          
