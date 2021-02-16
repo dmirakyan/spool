@@ -1,3 +1,17 @@
 h1,h2,h3,h4 {
     font-family: 'Comfortaa', cursive;
 }
+
+span.numberbadge {
+    background-color: white(206, 205, 205);
+     border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color:darkblue;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+  }
