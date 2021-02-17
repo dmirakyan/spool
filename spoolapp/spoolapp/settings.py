@@ -16,6 +16,8 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+
 
 
 
@@ -82,7 +84,7 @@ ROOT_URLCONF = 'spoolapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -151,7 +153,7 @@ STATIC_URL = '/static/'
 
 EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_HOST_USER = 'hello@getspool.io'
-EMAIL_HOST_PASSWORD = 'CorrectHoseBatteryStaple'
+EMAIL_HOST_PASSWORD = 'CorrectHorseBatteryStaple'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 

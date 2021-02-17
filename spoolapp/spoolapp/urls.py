@@ -13,16 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from teamflow import views
+import templates
+
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers                  
 from django.conf.urls import url
 from django.conf.urls.static import static
 from django.conf import settings
-
-
-
-from teamflow import views, templates
 
 
 router = routers.DefaultRouter()                    
@@ -33,5 +32,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),  
     path('', views.landing, name='landing'),
-    path('thanks',views.thanks, name='thanks')
+    path('thanks',views.thanks, name='thanks'),
+    path('app/',include('teamflow.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse, JsonResponse
 
 
 from rest_framework.response import Response
@@ -14,6 +15,11 @@ from django.core.mail import send_mail
 from django.conf import settings
 
 # Create your views here.
+
+def app(request):
+    if request.method == 'GET':
+        return render(request,'team.html')
+        # return HttpResponse('team page?')
 
 def landing(request):
     if request.method == 'GET':
