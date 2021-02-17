@@ -151,7 +151,7 @@ STATIC_URL = '/static/'
 
 EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_HOST_USER = 'hello@getspool.io'
-EMAIL_HOST_PASSWORD = 'GetSpool123123'
+EMAIL_HOST_PASSWORD = 'CorrectHoseBatteryStaple'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
