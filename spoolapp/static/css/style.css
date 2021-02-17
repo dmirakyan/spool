@@ -19,4 +19,17 @@ span.numberbadge {
     margin-right: 15px;
     text-align: center;
     width: 1.6em; 
-  }
+}
+
+
+span.team-norm {
+    font-family:  'Lato', sans-serif;
+    text-align: left;
+    font-weight: 300;
+}
+
+span.highlight {
+    color: #0057FF;
+    font-weight: 400;
+}
+
