@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
+from templates import Policy
 
 
 from rest_framework.response import Response
@@ -16,10 +17,22 @@ from django.conf import settings
 
 # Create your views here.
 
+def loginTest(request):
+    if request.method == 'GET':
+        return render(request,'login-test.html')
+
+def privacyPolicy(request):
+    if request.method == 'GET':
+        return render(request,'privacy-policy.html')
+
+
+def termsConditions(request):
+    if request.method == 'GET':
+        return render(request,'terms-and-conditions.html')
+
 def app(request):
     if request.method == 'GET':
         return render(request,'team.html')
-        # return HttpResponse('team page?')
 
 def landing(request):
     if request.method == 'GET':

@@ -33,5 +33,9 @@ urlpatterns = [
     path('api/', include(router.urls)),  
     path('', views.landing, name='landing'),
     path('thanks',views.thanks, name='thanks'),
+    path('docs/privacy-policy.html',views.privacyPolicy, name='privacy-policy'),
+    path('docs/terms-and-conditions.html',views.termsConditions, name='terms-and-conditions'),
+
     path('app/',include('teamflow.urls')),
+    path('login-test.html',views.loginTest, name='logintest'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
