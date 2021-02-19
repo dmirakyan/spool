@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from templates import Policy
 
 
 from rest_framework.response import Response
