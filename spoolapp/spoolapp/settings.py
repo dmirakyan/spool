@@ -153,7 +153,9 @@ STATIC_URL = '/static/'
 
 EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_HOST_USER = 'hello@getspool.io'
-EMAIL_HOST_PASSWORD = 'CorrectHorseBatteryStaple'
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+
+
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
