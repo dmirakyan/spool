@@ -11,5 +11,5 @@ from django.conf import settings
 urlpatterns = [
     path('team.html', views.app, name='app'),
     path('lockdown-pilot.html',views.lockdownPilot,name = 'lockdown-pilot'),
-    path('nuclear-launch-codes',views.lockdownPilot,name = 'nuclear-launch-codes'),
+    path('nuclear-launch-codes.html',views.lockdownPilot,name = 'nuclear-launch-codes'),
 ]
