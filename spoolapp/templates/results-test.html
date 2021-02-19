@@ -1,0 +1,9 @@
+
+{% extends 'base-app.html' %}
+{% load static %}
+
+{% block body_block %}
+<div class="relative bg-white h-screen overflow-y-scroll">
+    <iframe src="{% static "docs/staticresultdash.pdf" %}" style="width: 100%;height: 100%;border: none;"></iframe>
+</div>
+{% endblock %}

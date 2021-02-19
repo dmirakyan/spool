@@ -1,0 +1,28 @@
+
+{% extends 'base-app.html' %}
+{% load static %}
+
+{% block body_block %}
+
+<div class="relative bg-white h-screen overflow-y-scroll">
+        <main class="mt-4 pt- mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-12 lg:mt-14 lg:px-8 xl:mt-20 display-block">
+            <div class="text-center ml-auto mr-auto">
+                    <h4 class="pt-10 mt-5 text-blue-900 font-bold text-xl"> This page isn't accessible to the public  </h1>
+                    <h4 class="pt-2 display-block text-blue-900"> Please enter your pilot password</h1>
+                    <div class="text-center ">
+                        {% if form %}
+                        <form class="pt-10 mb-6 pb-4 m-4" action="" method="post">
+                        {% csrf_token %}
+                        <input class="border rounded-lg p-2 mr-0 text-gray-800 border-gray-200 bg-white" placeholder="password" type="password" name="password" required id="id_password"/>
+                        <button type="submit" value="Preview" class="border px-8 rounded-lg bg-blue-700 text-white p-2 ">GO</button>
+                        </form>
+                        {% endif %}
+                    </div>
+            <div>
+        </main>
+</div>
+
+    
+                
+
+{% endblock %}

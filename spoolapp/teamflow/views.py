@@ -14,13 +14,22 @@ from .serializers import *
 
 from django.core.mail import send_mail
 from django.conf import settings
+from lockdown.decorators import lockdown
+
 
 # Create your views here.
+
+@lockdown()
+def lockdownPilot(request):
+    if request.method == 'GET':
+        return render(request,'results-test.html')
 
 def loginTest(request):
     if request.method == 'GET':
         return render(request,'login-test.html')
 
+
+@lockdown()
 def privacyPolicy(request):
     if request.method == 'GET':
         return render(request,'privacy-policy.html')

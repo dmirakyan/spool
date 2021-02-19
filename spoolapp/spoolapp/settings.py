@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'lockdown',
     'rest_framework',
     'corsheaders',
     'teamflow',
@@ -96,6 +97,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'spoolapp.wsgi.application'
 
@@ -163,3 +165,6 @@ EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL= 'hello@getspool.io'
 
+
+# Lockdown settings
+LOCKDOWN_PASSWORDS = ('opensesame')
