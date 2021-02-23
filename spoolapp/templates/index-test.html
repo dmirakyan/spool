@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+
+{% block body_block %}
+{% load static %}
+
+
+
+<div class="relative bg-white h-auto overflow-y-auto" style="background: url({% static "images/landing-hero-13.png" %}); background-size: cover; ">
+
+    <header class="relative w-full px-8 text-gray-700 body-font" >
+        <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+            <img class="relative z-10 flex justify-start max-h-12" src="{% static "images/logo-white.png" %}">
+            <nav class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
+            </nav>
+            <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
+                <a href="#features" class="px-2 relative font-medium leading-6 text-white transition duration-150 ease-out py-1 rounded-lg hover:bg-white hover:bg-opacity-20" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                    <h3 class="inline-block"> Features </h3>
+                </a>
+
+                <a href="#email" class="px-2 relative font-medium leading-6 text-white transition duration-150 ease-out py-1 rounded-lg hover:bg-white hover:bg-opacity-20" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                    <h3 class="inline-block px-2"> Contact </h3>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <div>
+        <main class="mt-4 pt- mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-12 lg:mt-14 lg:px-8 xl:mt-20 display-block">
+                <!-- <img class="display-block pb-2 ml-auto mr-auto lg:max-h-44 lg:mb-5" src="{% static "images/logo-white-4.png" %}"> -->
+                <div class="text-center ml-auto mr-auto">
+                    <div class="text-left">
+                        <h3 class="py-2 mt-5 lg:mt-50 display-block lg:text-6xl sm:text-4xl md:text-5xl text-white"> new team, same dream </h1> 
+                        <h2 class="py-2  lg:text-3xl font-medium sm:text-4xl md:text-5xl text-white"> with spool, setting team culture is as easy as 1 - 2 - 3:</h1>
+                    </div>
+                <ul class="pt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    
+                    <li class="bg-gray-200 bg-opacity-0 col-span-1 rounded-lg ">
+                    <div class="w-full flex items-center justify-between p-4 space-x-6">
+                        <div class="flex-1 flex-shrink-0 mx-auto"> 
+                        <svg class="text-center mx-auto mr-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="48" height="48"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.41667,0 -71.66667,32.25 -71.66667,71.66667c0,39.41667 32.25,71.66667 71.66667,71.66667c39.41667,0 71.66667,-32.25 71.66667,-71.66667c0,-39.41667 -32.25,-71.66667 -71.66667,-71.66667zM95.31667,118.96667h-12.9v-50.88333l-15.76667,5.01667v-10.75l27.23333,-10.03333h1.43333z"></path></g></g></svg>
+                            <!-- <svg class="text-center mx-auto mr-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="52" height="52"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,13.23077c-40.36418,0 -72.76923,32.40505 -72.76923,72.76923c0,40.36419 32.40505,72.76923 72.76923,72.76923c40.36419,0 72.76923,-32.40504 72.76923,-72.76923c0,-40.36418 -32.40504,-72.76923 -72.76923,-72.76923zM93.28726,116.44111h-11.91287v-43c-3.97956,3.30769 -10.59495,4.6256 -11.91286,4.6256v-10.59495c3.30769,-0.64603 11.24099,-3.95372 16.53846,-8.60517h7.28726z"></path></g></g></svg> -->
+                        <div class="pt-5 flex items-center space-x-3">
+                            <h3 class="text-white text-center lg:text-2xl">See how your team approaches their expectations, goals, and working styles</h3>
+                        </div>
+                        </div>
+                    </div>
+                    </li>
+
+                    <li class="bg-gray-200 bg-opacity-0 col-span-1 rounded-lg ">
+                    <div class="w-full flex items-center justify-between p-4 space-x-6">
+                        <div class="flex-1 flex-shrink-0 mx-auto">
+                        <svg  class="text-center mx-auto mr-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="48" height="48"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.41667,0 -71.66667,32.25 -71.66667,71.66667c0,39.41667 32.25,71.66667 71.66667,71.66667c39.41667,0 71.66667,-32.25 71.66667,-71.66667c0,-39.41667 -32.25,-71.66667 -71.66667,-71.66667zM109.6556,118.97787h-45.88346v-9.32227c19.3724,-21.5 30.1224,-29.39453 30.1224,-37.98893c0,-2.85547 -1.45573,-9.32226 -8.6224,-9.32226c-9.29427,0 -9.29427,9.32226 -9.29427,11.47786h-13.63347c0,-6.46679 5.01107,-21.5 22.92774,-21.5c17.91667,0 21.5,10.75 21.5,18.61654c0,10.75 -7.86654,19.3724 -26.51107,37.98893h28.66667v10.05013z"></path></g></g></svg>                    <div class="pt-5 flex items-center space-x-3">
+                            <h3 class="text-white text-center lg:text-2xl">Target where your team is on the same page versus what you need to talk about</h3>
+                        </div>
+                        </div>
+                    </div>
+                    </li>
+
+                    <li class="bg-gray-200 bg-opacity-0 col-span-1 rounded-lg ">
+                    <div class="w-full flex items-center justify-between p-4 space-x-6">
+                        <div class="flex-1 flex-shrink-0 mx-auto">
+                        <svg class="text-center mx-auto mr-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="48" height="48"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.41667,0 -71.66667,32.25 -71.66667,71.66667c0,39.41667 32.25,71.66667 71.66667,71.66667c39.41667,0 71.66667,-32.25 71.66667,-71.66667c0,-39.41667 -32.25,-71.66667 -71.66667,-71.66667zM85.27214,119.67774c-17.18881,0 -22.92774,-12.17774 -22.19988,-19.3444h12.9056c-0.72787,2.1556 1.42773,8.5944 10.02213,8.5944c9.32226,0 10.02214,-7.86653 10.02214,-9.32226c0,-10.02214 -9.29427,-10.02214 -10.75,-10.02214h-7.16667v-10.02213h7.16667c3.58333,0 10.05012,-0.72787 10.05012,-9.32227c0,-7.89453 -7.16667,-8.5944 -9.32226,-8.5944c-7.16667,0 -8.5944,5.71094 -8.5944,7.16667h-13.63346c0,-12.9056 12.9056,-17.91667 21.5,-17.91667c20.07226,0 22.22786,13.60547 22.22786,18.61653c0,9.32226 -8.5944,13.63347 -10.02213,14.33333c3.58333,1.42774 10.75,5.01107 10.75,15.76107c0.69987,15.78906 -12.9056,20.07226 -22.95573,20.07226z"></path></g></g></svg>                    <div class="pt-5 flex items-center space-x-3">
+                            <h3 class="text-white text-center lg:text-2xl">Check-in with your teams to continue the conversation!</h3>
+                        </div>
+                        </div>
+                    </div>
+                    </li>
+
+                </ul>
+                
+
+                <h1 class="pt-20 display-block text-4xl sm:text-4xl md:text-4xl">
+                    <span class="xl:inline text-white">Learn more today</span>
+                </h1>
+
+                <div class="mt-6 pb-20">
+                    <form method="post" action="{% url 'landing' %}">
+                    {% csrf_token %}
+                    <input name="email" class="flex-1 appearance-none border border-transparent py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-full text-base focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent" placeholder="Your email">
+                    <!-- <input class="rounded-lg border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Your email"> -->
+                    <button type = "submit" class="flex-1 appearance-none border border-transparent py-2 mx-2 px-4 rounded-full bg-blue-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
+                        <h5 class="text-l">
+                        GO
+                        </h5>
+                    </button>
+                    </form>
+                </div>
+            </div> 
+        </main>
+    </div>
+
+    <section id="features" class="w-full mt-8 pt-24 pb-7 md:pt-20 md:pb-24">
+        <div class="py-4 box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+            <!-- Image -->
+            <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+                <img src="{% static "images/landing-mockup-a.png" %}" class="pr-20" />
+            </div>
+      
+            <!-- Content -->
+            <div class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
+                <h3 class="m-0 text-blue-700 text-xl-2 font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+                  find out what your team thinks is cool.
+                </h3>
+                <h4 class="pt-4  text-xl pb-8 m-0 leading-7 text-graay-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-xl">
+                  spool gets you started with a customized onboarding survey to figure out where you team is, and isn’t, jiving.
+                </h4>
+            </div>
+            <!-- End  Content -->
+        </div>
+      </section>
+</div>
+
+<section class="w-full pt-7 pb-7 md:pt-20 md:pb-24">
+    <div class="py-36 box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+        <!-- Content -->
+        <div class="box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32">
+          <h3 class="text-right m-0 text-blue-700 font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+              see your team stats, right at a glance.
+            </h3>
+            <h4 class="text-right pr-0 px-0 pt-4 pb-8 m-0 text-gray-700 border-0 border-gray-300 lg:text-xl">
+              get your customized team dashboard with how your team operates and what the team goals are.
+            </h4>
+        </div>
+        <!-- End  Content -->
+  
+        <!-- Image -->
+        <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+            <img src="{% static "images/landing-mockup-b.png" %}" class="pl-20" />
+        </div>
+    </div>
+    <div class="py-4 box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+      <!-- Image -->
+      <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+          <img src="{% static "images/landing-mockup-c.png" %}" class="pr-20" />
+      </div>
+  
+      <!-- Content -->
+      <div class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
+          <h3 class="m-0 text-blue-700 text-xl-2 font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+              cut to the chase and figure out how to talk.
+          </h3>
+          <h4 class="pt-4  text-xl pb-8 m-0 leading-7 text-graay-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-xl">
+              each team member gets a custom profile to learn how every body on the team likes to work.
+          </h4>
+      </div>
+      <!-- End  Content -->
+    </div>
+  </section>
+
+
+</section>
+<footer class="bg-blue-700">
+  <div id="email" class="max-w-screen-xl px-4 py-4 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <h1 class="pt-20 text-center text-2xl sm:text-4xl md:text-4xl">
+            <span class="xl:inline text-white">Get in touch: </span>
+            <a href="mailto:hello@getspool.io" class="xl:inline text-white hover:text-purple-300 transition duration-150"> hello@spool.io </a>
+        </h1>
+      <!-- <div class="flex justify-center mt-8 space-x-6">
+          <a href="#" class="text-white hover:text-gray-500">
+              <span class="sr-only">Instagram</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+              </svg>
+          </a>
+      </div> -->
+      <h4 class="pt-12 mt-8 text-base leading-6 text-center text-white">
+          &copy; 2021 SpoolApp, All rights reserved.
+      </h4>
+  </div>
+</footer>
+
+{% endblock %}

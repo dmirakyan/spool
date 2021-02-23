@@ -32,6 +32,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),  
     path('', views.landing, name='landing'),
+    path('test-landing', views.landingTest, name='landing'),
+
+
     path('thanks',views.thanks, name='thanks'),
     path('docs/privacy-policy.html',views.privacyPolicy, name='privacy-policy'),
     path('docs/terms-and-conditions.html',views.termsConditions, name='terms-and-conditions'),

@@ -18,6 +18,9 @@ from lockdown.decorators import lockdown
 
 # Create your views here.
 
+
+
+
 @lockdown()
 def lockdownPilot(request):
     if request.method == 'GET':
@@ -27,8 +30,6 @@ def loginTest(request):
     if request.method == 'GET':
         return render(request,'login-test.html')
 
-
-@lockdown()
 def privacyPolicy(request):
     if request.method == 'GET':
         return render(request,'privacy-policy.html')
@@ -56,6 +57,10 @@ def landing(request):
                   fail_silently=False)
         return render(request,'index-confirmation.html')
 
+def landingTest(request):
+    if request.method == 'GET':
+        return render(request,'index-test.html')
+        
 def thanks(request):
     if request.method == 'GET':
         return render(request,'index-confirmation.html')
