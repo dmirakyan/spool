@@ -32,7 +32,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),  
     path('', views.landing, name='landing'),
-    path('test-landing', views.landingTest, name='landing'),
+    # path('test-landing', views.landingTest, name='landing'),
 
 
     path('thanks',views.thanks, name='thanks'),

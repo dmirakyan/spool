@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+
+{% block body_block %}
+{% load static %}
+
+<div class="relative bg-white h-screen overflow-y-scroll" style="background: url({% static "images/landing-hero-90.png" %}); background-size: cover; ">
+
+    <div>
+      <main class="mt-4 pt- mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-12 lg:mt-14 lg:px-8 xl:mt-20 display-block">
+          <img class="display-block pb-2 ml-auto mr-auto lg:max-h-44 lg:mb-5" src="{% static "images/logo-white-4.png" %}">
+          <div class="text-center ml-auto mr-auto">
+            <h1 class="mt-5 lg:mt-50 display-block lg:text-3xl font-bold sm:text-4xl md:text-5xl xl:inline text-white"> Bring your team back to the basics. </h1> </br>
+            <h1 class="pt-12 display-block lg:text-3xl font-bold sm:text-4xl md:text-5xl xl:inline text-white"> With spool, preventing workplace conflict just became as easy as 1 - 2 - 3:</h1>
+
+            <ul class="pt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              
+              <li class="bg-gray-200 bg-opacity-0 col-span-1 rounded-lg ">
+                <div class="w-full flex items-center justify-between p-4 space-x-6">
+                  <div class="flex-1 flex-shrink-0 mx-auto">
+                    <svg class="text-center mx-auto mr-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="48" height="48"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.41667,0 -71.66667,32.25 -71.66667,71.66667c0,39.41667 32.25,71.66667 71.66667,71.66667c39.41667,0 71.66667,-32.25 71.66667,-71.66667c0,-39.41667 -32.25,-71.66667 -71.66667,-71.66667zM95.31667,118.96667h-12.9v-50.88333l-15.76667,5.01667v-10.75l27.23333,-10.03333h1.43333z"></path></g></g></svg>
+                     <!-- <svg class="text-center mx-auto mr-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="52" height="52"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,13.23077c-40.36418,0 -72.76923,32.40505 -72.76923,72.76923c0,40.36419 32.40505,72.76923 72.76923,72.76923c40.36419,0 72.76923,-32.40504 72.76923,-72.76923c0,-40.36418 -32.40504,-72.76923 -72.76923,-72.76923zM93.28726,116.44111h-11.91287v-43c-3.97956,3.30769 -10.59495,4.6256 -11.91286,4.6256v-10.59495c3.30769,-0.64603 11.24099,-3.95372 16.53846,-8.60517h7.28726z"></path></g></g></svg> -->
+                    <div class="pt-5 flex items-center space-x-3">
+                      <h3 class="text-white text-center lg:text-2xl">See how your team approaches their expectations, goals, and working styles</h3>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="bg-gray-200 bg-opacity-0 col-span-1 rounded-lg ">
+                <div class="w-full flex items-center justify-between p-4 space-x-6">
+                  <div class="flex-1 flex-shrink-0 mx-auto">
+                    <svg  class="text-center mx-auto mr-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="48" height="48"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.41667,0 -71.66667,32.25 -71.66667,71.66667c0,39.41667 32.25,71.66667 71.66667,71.66667c39.41667,0 71.66667,-32.25 71.66667,-71.66667c0,-39.41667 -32.25,-71.66667 -71.66667,-71.66667zM109.6556,118.97787h-45.88346v-9.32227c19.3724,-21.5 30.1224,-29.39453 30.1224,-37.98893c0,-2.85547 -1.45573,-9.32226 -8.6224,-9.32226c-9.29427,0 -9.29427,9.32226 -9.29427,11.47786h-13.63347c0,-6.46679 5.01107,-21.5 22.92774,-21.5c17.91667,0 21.5,10.75 21.5,18.61654c0,10.75 -7.86654,19.3724 -26.51107,37.98893h28.66667v10.05013z"></path></g></g></svg>                    <div class="pt-5 flex items-center space-x-3">
+                      <h3 class="text-white text-center lg:text-2xl">Target where your team is on the same page versus what you need to talk about</h3>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="bg-gray-200 bg-opacity-0 col-span-1 rounded-lg ">
+                <div class="w-full flex items-center justify-between p-4 space-x-6">
+                  <div class="flex-1 flex-shrink-0 mx-auto">
+                    <svg class="text-center mx-auto mr-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="48" height="48"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,14.33333c-39.41667,0 -71.66667,32.25 -71.66667,71.66667c0,39.41667 32.25,71.66667 71.66667,71.66667c39.41667,0 71.66667,-32.25 71.66667,-71.66667c0,-39.41667 -32.25,-71.66667 -71.66667,-71.66667zM85.27214,119.67774c-17.18881,0 -22.92774,-12.17774 -22.19988,-19.3444h12.9056c-0.72787,2.1556 1.42773,8.5944 10.02213,8.5944c9.32226,0 10.02214,-7.86653 10.02214,-9.32226c0,-10.02214 -9.29427,-10.02214 -10.75,-10.02214h-7.16667v-10.02213h7.16667c3.58333,0 10.05012,-0.72787 10.05012,-9.32227c0,-7.89453 -7.16667,-8.5944 -9.32226,-8.5944c-7.16667,0 -8.5944,5.71094 -8.5944,7.16667h-13.63346c0,-12.9056 12.9056,-17.91667 21.5,-17.91667c20.07226,0 22.22786,13.60547 22.22786,18.61653c0,9.32226 -8.5944,13.63347 -10.02213,14.33333c3.58333,1.42774 10.75,5.01107 10.75,15.76107c0.69987,15.78906 -12.9056,20.07226 -22.95573,20.07226z"></path></g></g></svg>                    <div class="pt-5 flex items-center space-x-3">
+                      <h3 class="text-white text-center lg:text-2xl">Check-in with your teams to continue the conversation!</h3>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+            
+
+            <h1 class="pt-10 display-block text-4xl sm:text-4xl md:text-4xl">
+              <span class="xl:inline text-white">Learn more today</span>
+            </h1>
+
+            <div class="mt-6 pb-12">
+              <form method="post" action="{% url 'landing' %}">
+                {% csrf_token %}
+                <input name="email" class="flex-1 appearance-none border border-transparent py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-full text-base focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent" placeholder="Your email">
+                <!-- <input class="rounded-lg border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Your email"> -->
+                <button type = "submit" class="flex-1 appearance-none border border-transparent py-2 mx-2 px-4 rounded-full bg-blue-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
+                  <h5 class="text-l">
+                    GO
+                  </h5>
+                </button>
+              </form>
+            </div>
+          </div>
+
+            
+        </main>
+      </div>
+    </div>
+  </div>
+{% endblock %}

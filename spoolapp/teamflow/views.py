@@ -57,9 +57,9 @@ def landing(request):
                   fail_silently=False)
         return render(request,'index-confirmation.html')
 
-def landingTest(request):
-    if request.method == 'GET':
-        return render(request,'index-test.html')
+# def landingTest(request):
+#     if request.method == 'GET':
+#         return render(request,'index-test.html')
         
 def thanks(request):
     if request.method == 'GET':
