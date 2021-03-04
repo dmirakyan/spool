@@ -11,9 +11,9 @@
     <header class="relative w-full px-8 text-gray-700 body-font" >
         <div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
             <img class="relative z-10 flex justify-start max-h-12" src="{% static "images/logo-blue.png" %}">
-            <nav class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
+            <nav class="top-0 left-0 z-0 flex items-center justify-center w-full h-full lg:py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
             </nav>
-            <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
+            <div class="invisible lg:visible relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
                 <a href="#features" class="hover:border-opacity-50 border border-blue-700 border-opacity-0 px-3 relative  text-l leading-6 font-bold text-blue-700 transition duration-150 ease-out py-2 rounded-lg" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
                     <h3 class="inline-block px-3"> FEATURES </h3>
                 </a>
@@ -26,30 +26,29 @@
     </header>
     
     <div>
-        <main class="mt-4 pt-8 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-12 lg:mt-14 lg:px-8 xl:mt-20 display-block">
+        <main class="px-6 xl:pt-8 mx-auto lg:max-w-7xl xl:px-4 sm:mt-12 sm:px-6 md:mt-12 lg:mt-14 lg:px-8 xl:mt-20 display-block">
                 <!-- <img class="display-block pb-2 ml-auto mr-auto lg:max-h-44 lg:mb-5" src="{% static "images/logo-white-4.png" %}"> -->
-                <div class="hang-left mr-auto w-2/3 max-w-1/2">
-                    <div class="text-left leading-loose	">
-                        <h3 class="py-4 mt-5 font-bold lg:mt-50 display-block lg:text-6xl sm:text-4xl md:text-5xl text-blue-700"> new team, same dream </h1> 
-                        <h2 class="py-4 inline lg:text-3xl font-medium sm:text-4xl md:text-5xl text-black"> 
+                <div class="hang-left mr-auto  lg:w-2/3 lg:max-w-1/2">
+                    <div class="text-left leading-loose	w-5/6">
+                        <h3 class="py-2 lg:py-4 lg:mt-5 font-bold lg:mt-50 display-block text-3xl lg:text-6xl text-blue-700"> new team, same dream </h1> 
+                        <h2 class="py-2 lg:py-4 inline font-medium text-2xl lg:text-3xl text-black"> 
                             <span>with spool, setting team culture is as easy as </span>
-                        </br>
-                            <span >as easy as </span>
+                        <!-- </br> -->
+                            <!-- <span ></span> -->
                             <span class="text-blue-700"> 1 - 2 - 3.</span>
                         </h2>
                     </div>
             
 
-                <div class="mt-6 h-60 pb-20 w-1/3 pt-12">
+                <div class="mt-6 pt:4 lg:h-60 lg:pb-20 lg:pt-12 lg:w-1/3">
                     <form method="post" action="{% url 'landing' %}">
                     {% csrf_token %}
                     <div>
-                        <input name="email" class="ring-2 w-full appearance-none border border-transparent py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-full text-base focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent" placeholder="Your email">
+                        <input name="email" class="ring-2 w-full appearance-none border border-transparent py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-full text-base focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent" placeholder="your email">
                     </div>
-                     <!-- <input class="rounded-lg border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Your email"> --> 
                     <div>
                         <button type = "submit" class="w-full appearance-none border border-transparent py-2 my-2 px-2 rounded-full bg-blue-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
-                            <h5 class="text-l mx-auto">
+                            <h5 class="uppercase text-sm lg:text-xl mx-auto">
                             Tell me more
                             </h5>
                         </button>
@@ -64,7 +63,7 @@
         <div class="w-full py-0 box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
 
             <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 ">
-                <img src="{% static "images/landing-mockup-a.png" %}" class="pr-20" />
+                <img src="{% static "images/landing-mockup-a.png" %}" class="lg:pr-20" />
             </div>
 
             <div class="flex box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
@@ -72,7 +71,7 @@
                     <svg class="text-left" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="56" height="56"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="blue" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#1D4ED8"><path d="M86,14.33333c-39.41667,0 -71.66667,32.25 -71.66667,71.66667c0,39.41667 32.25,71.66667 71.66667,71.66667c39.41667,0 71.66667,-32.25 71.66667,-71.66667c0,-39.41667 -32.25,-71.66667 -71.66667,-71.66667zM95.31667,118.96667h-12.9v-50.88333l-15.76667,5.01667v-10.75l27.23333,-10.03333h1.43333z"></path></g></g></svg>
                 </div>
                 <div class="inline-block">
-                    <h3 class="m-0 text-blue-700 text-xl-2 font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+                    <h3 class="m-0 text-blue-700 text-2xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
                         see how your team approaches work.
                     </h3>
                     <h4 class="pt-4  text-xl pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-xl">
@@ -90,7 +89,7 @@
         <!-- Content -->
             <div class="flex box-border w-full text-black border-solid md:w-1/2 md:pr-10">
                 <div class="inline-block">
-                    <h3 class="text-right m-0 text-blue-700 font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+                    <h3 class="text-right text-2xl m-0 text-blue-700 font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
                         skip the small talk and focus on what matters.
                     </h3>
                     <h4 class="text-right pr-0 px-0 pt-4 pb-8 m-0 text-gray-700 border-0 border-gray-300 lg:text-xl">
@@ -106,13 +105,13 @@
   
         <!-- Image -->
         <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
-            <img src="{% static "images/landing-mockup-b.png" %}" class="pl-20" />
+            <img src="{% static "images/landing-mockup-b.png" %}" class="lg:pl-20" />
         </div>
     </div>
     <div class="py-4 box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
       <!-- Image -->
-      <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
-          <img src="{% static "images/landing-mockup-c.png" %}" class="pr-20" />
+      <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+          <img src="{% static "images/landing-mockup-c.png" %}" class="lg:pr-20" />
       </div>
   
       <!-- Content -->
@@ -121,11 +120,11 @@
             <svg class="text-left" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="56" height="56"viewBox="0 0 172 172"style=" fill:#000000;"><g fill="blue" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M86,14.33333c-39.41667,0 -71.66667,32.25 -71.66667,71.66667c0,39.41667 32.25,71.66667 71.66667,71.66667c39.41667,0 71.66667,-32.25 71.66667,-71.66667c0,-39.41667 -32.25,-71.66667 -71.66667,-71.66667zM85.27214,119.67774c-17.18881,0 -22.92774,-12.17774 -22.19988,-19.3444h12.9056c-0.72787,2.1556 1.42773,8.5944 10.02213,8.5944c9.32226,0 10.02214,-7.86653 10.02214,-9.32226c0,-10.02214 -9.29427,-10.02214 -10.75,-10.02214h-7.16667v-10.02213h7.16667c3.58333,0 10.05012,-0.72787 10.05012,-9.32227c0,-7.89453 -7.16667,-8.5944 -9.32226,-8.5944c-7.16667,0 -8.5944,5.71094 -8.5944,7.16667h-13.63346c0,-12.9056 12.9056,-17.91667 21.5,-17.91667c20.07226,0 22.22786,13.60547 22.22786,18.61653c0,9.32226 -8.5944,13.63347 -10.02213,14.33333c3.58333,1.42774 10.75,5.01107 10.75,15.76107c0.69987,15.78906 -12.9056,20.07226 -22.95573,20.07226z"></path></g></g></svg>                    <div class="pt-5 flex items-center space-x-3"></div>
         </div>
         <div class="inline-block">
-            <h3 class="m-0 text-blue-700 text-xl-2 font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
-                see how your team approaches work.
+            <h3 class="m-0 text-blue-700 text-2xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+                approaching someone new? we’ve got your back.
             </h3>
             <h4 class="pt-4  text-xl pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 lg:text-xl">
-                spool gets you started with a customized onboarding survey to jumpstart your team conversations and not miss a thing.
+                each team member gets a custom profile to learn how every body on the team likes to work.
             </h4>
         </div>
       </div>
@@ -138,7 +137,7 @@
 <footer class="bg-blue-700">
   <div id="email" class="max-w-screen-xl px-4 py-4 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
         <h1 class="pt-20 text-center text-2xl sm:text-4xl md:text-4xl">
-            <span class="xl:inline text-white">Get in touch: </span>
+            <span class="xl:inline text-white">get in touch: </span>
             <a href="mailto:hello@getspool.io" class="xl:inline text-white hover:text-purple-300 transition duration-150"> hello@spool.io </a>
         </h1>
       <!-- <div class="flex justify-center mt-8 space-x-6">
