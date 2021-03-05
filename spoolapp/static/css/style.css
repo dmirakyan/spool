@@ -33,6 +33,23 @@ span.highlight {
     font-weight: 400;
 }
 
+.hero-background {
+    background-repeat: no-repeat !important;
+  }
+  
+@media screen and (max-width: 600px) {
+    .hero-background {
+      background-size: 300% 80% !important;
+      background-position: 25% -150% !important;
+    }
+  }
+
+@media screen and (min-width: 600px) {
+    .hero-background {
+        background-size:100% 100% !important; 
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
